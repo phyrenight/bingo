@@ -21,3 +21,8 @@ article {
 section {
   border: 1px solid black;
 }
+div {
+	border:1px solid black;
+	display:inline-block;
+	padding:5%;
+}
