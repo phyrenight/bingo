@@ -3,9 +3,14 @@
   <head>
     <title>Bingo</title>
 	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
+
   </head>
-  <body onload="assignM()">
+  <body onload="newGame()">
     <header>
 	  <h1>Bingo</h1>
 	</header>
@@ -13,53 +18,17 @@
 	  <p>Drawn number:</p>
 	  <p id="number_place"></p>
 	</aside>
-	<main>
-	  <section id="bingo_card">
-	  <section>
-	    <div><p>B</p></div>
-	    <div><p>I</p></div>
-	    <div><p>N</p></div>
-	    <div><p>G</p></div>
-	    <div><p>O</p></div>
+	<article>
+	  <div id="bingoCard" class="container">
+	  <section class="row">
+	    <div>B</div>
+	    <div>I</div>
+	    <div>N</div>
+	    <div>G</div>
+	    <div>O</div>
 	  </section>
-	  <section>
-	    <div id="div1"></div>
-	    <div id="div2"></div>
-	    <div id="div3"></div>
-	    <div id="div4"></div>
-	    <div id="div5"></div>
-	  </section>
-	  <section>
-	    <div id="div6"></div>
-		<div id="div7"></div>
-		<div id="div8"></div>
-		<div id="div9"></div>
-		<div id="div10"></div>
-	  </section>
-	  <section>
-	    <div id="div11"></div>
-		<div id="div12"></div>
-		<div id="free"><p>Free</p></div>
-		<div id="div13"></div>
-		<div id="div14"></div>
-	  </section>
-	  <section>
-	    <div id="div15"></div>
-		<div id="div16"></div>
-		<div id="div17"></div>
-		<div id="div18"></div>
-		<div id="div19"></div>
-	  </section>
-	  <section>
-	    <div id="div20"></div>
-		<div id="div21"></div>
-		<div id="div22"></div>
-		<div id="div23"></div>
-		<div id="div24"></div>
-	  </section>
-	  </section>
-	</main>
-	<script src="javascript/interactivity.js">
-	</script>
+    </div>
+    </article>
+    	<script src="javascript/interactivity.js">	</script>
   </body>
 </html>
