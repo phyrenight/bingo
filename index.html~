@@ -19,7 +19,7 @@
 	  <p>Drawn number:</p>
 	  <p id="number_place"></p>
           <form>
-           <button type="button" onclick="drawNumber()">draw number</button>
+           <button onclick="drawNumber()">draw number</button>
           </form>
 	</aside>
 	<article>
@@ -33,7 +33,7 @@
 	  </section>
     </div>
     <form>
-    <button type="button"class="#" onclick="newGame()">new game</button>
+    <button class="#" onclick="newGame()">new game</button>
     </article>
     	<script src="javascript/interactivity.js">	</script>
   </body>

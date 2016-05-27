@@ -26,7 +26,6 @@ function getCardData(){
 }
 }
 function newGame(){
-  bingoArray = []
   getCardData();
   buildCard();
  }
