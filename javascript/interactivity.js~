@@ -26,9 +26,25 @@ function getCardData(){
 }
 }
 function newGame(){
+  clearScreen();
   getCardData();
   buildCard();
  }
+
+function clearScreen(){
+    var clearDraw = ""
+    document.getElementById("number_place").innerHTML = clearDraw;
+    var parent = document.getElementById("bingo_Card")
+    if(bingoArray.length > 1){
+        console.log(bingoArray.length);
+        for(var i = 0;i <= 20; i+=5){
+            var div = "section_" + i;
+            var divToRemove = document.getElementById(div);
+console.log(divToRemove);
+            // var garbage = parent.removeChild(divToRemove);
+        }
+    }
+}
 
 function buildCard(){
     count = 1;
