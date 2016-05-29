@@ -93,7 +93,8 @@ function buildCard(){
     num = document.createTextNode(bingoArray[i]);
     div.appendChild(num);
     document.getElementById(sectionNumber).appendChild(div);
-
+    addclick = document.getElementById(divNumber);
+    addclick.setAttribute("onclick", "marker("+divNumber+")");
     count += 1;
     }
 }
@@ -104,8 +105,13 @@ function marker(divNumber){
                           the randomly generated number.
         purpose - allows the user to mark the board to show
                   that the number was drawn.
-    */ 
-    var marker = "green";
-    var div = document.getElementById(divNumber);
-    div.style.backgroundcolor = marker;
+    */
+    var hasGreen  = divNumber.hasAttribute('style');
+    if(!hasGreen){
+        var marker = "green";
+        divNumber.style.backgroundColor = marker;
+    }
+    else{
+        divNumber.removeAttribute('style');
+    }
 }
