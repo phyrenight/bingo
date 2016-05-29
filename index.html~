@@ -15,12 +15,18 @@
 	  <h1 class="text-center">Bingo</h1>
 	</header>
 	<hr>
-	<aside id="random_Number" onclick="getNumber()">
+	<aside id="random_Number" class="container" onclick="getNumber()">
+          <div class="row">
 	  <p>Drawn number:</p>
+          </div>
+          <div class="row">
 	  <p id="number_place"></p>
+          </div>
+          <div class="row">
           <form>
            <button type="button" onclick="drawNumber()">draw number</button>
           </form>
+          </div>
 	</aside>
 	<article>
 	  <div class="container">
@@ -35,7 +41,7 @@
         <div id="bingo_Card" class="container">
         </div>
     <form>
-    <button type="button"class="#" onclick="newGame()">new game</button>
+    <button type="button"class="col-xs-2 col-xs-offset-5 col-sm-2 col-sm-offset-5 col-md-2 col-md-offset-5 col-lg-2 col-lg-offset-5" onclick="newGame()">new game</button>
     </article>
     	<script src="javascript/interactivity.js">	</script>
   </body>
